@@ -608,6 +608,10 @@ section {
 
 /* Education Section */
 .education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   h2 {
     font-family: "Poppins-Bold";
   }
