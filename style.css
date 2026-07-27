@@ -48,6 +48,14 @@ nav {
 .logo h1 {
   font-size: 28px;
   font-weight: 700;
+
+  .first-tag{
+    color: var(--main-color);
+  }
+
+  .second-tag {
+    color: #ffffff;
+  }
 }
 
 .logo h1 span {
