@@ -21,7 +21,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script>
-      // Apply saved theme before paint to avoid a flash
       try {
         const t = localStorage.getItem("theme");
         if (t) document.documentElement.dataset.theme = t;
@@ -78,12 +77,15 @@
         <div class="blob blob-2" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-content reveal">
-            <span class="eyebrow"><i class="fa-solid fa-circle"></i> Open to opportunities</span>
+            <span class="eyebrow"
+              ><i class="fa-solid fa-circle"></i> Open to opportunities</span
+            >
             <h3>Hello, I'm</h3>
             <h1>Mani Krishna</h1>
             <h2 class="role">
               <span class="static">A </span
-              ><span class="typed" id="typed" aria-live="polite">Frontend Developer</span
+              ><span class="typed" id="typed" aria-live="polite"
+                >Frontend Developer</span
               ><span class="cursor" aria-hidden="true"></span>
             </h2>
             <p class="lead">
@@ -93,16 +95,34 @@
             </p>
 
             <div class="btn-group">
-              <a href="./Assests/MANI_A_Resume.pdf" class="btn btn-primary" download>
+              <a
+                href="./Assests/MANI_A_Resume.pdf"
+                class="btn btn-primary"
+                download
+              >
                 <i class="fa-solid fa-download"></i> Get Resume
               </a>
               <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
 
             <div class="social-links">
-              <a href="https://github.com/manikrishnahero" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/mani-a-6134b5296" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:manikrishna9345@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a
+                href="https://github.com/manikrishnahero"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mani-a-6134b5296"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="mailto:manikrishna9345@gmail.com" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
           </div>
 
@@ -119,12 +139,20 @@
                 <span class="avatar-fallback" aria-hidden="true">MK</span>
               </div>
             </div>
-            <div class="float-chip chip-1"><i class="fa-brands fa-react"></i> React</div>
-            <div class="float-chip chip-2"><i class="fa-brands fa-js"></i> JavaScript</div>
-            <div class="float-chip chip-3"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="float-chip chip-1">
+              <i class="fa-brands fa-react"></i> React
+            </div>
+            <div class="float-chip chip-2">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+            <div class="float-chip chip-3">
+              <i class="fa-brands fa-css3-alt"></i> CSS3
+            </div>
           </div>
         </div>
-        <a href="#about" class="scroll-hint" aria-label="Scroll to About"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About"
+          ><i class="fa-solid fa-chevron-down"></i
+        ></a>
       </section>
 
       <!-- About -->
@@ -146,9 +174,16 @@
               </p>
             </div>
             <div class="stats reveal">
-              <div class="stat"><strong data-count="7">0</strong><span>Projects built</span></div>
-              <div class="stat"><strong data-count="4">0</strong><span>Live on Vercel / Pages</span></div>
-              <div class="stat"><strong data-count="2">0</strong><span>Languages spoken</span></div>
+              <div class="stat">
+                <strong data-count="7">0</strong><span>Projects built</span>
+              </div>
+              <div class="stat">
+                <strong data-count="4">0</strong
+                ><span>Live on Vercel / Pages</span>
+              </div>
+              <div class="stat">
+                <strong data-count="2">0</strong><span>Languages spoken</span>
+              </div>
             </div>
           </div>
 
@@ -170,14 +205,38 @@
         <div class="container">
           <h2 class="heading reveal">Technical <span>Skills</span></h2>
           <div class="skills-grid">
-            <div class="skill-card reveal"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
-            <div class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
-            <div class="skill-card reveal"><i class="fa-brands fa-js"></i><h3>JavaScript (ES6+)</h3></div>
-            <div class="skill-card reveal"><i class="fa-brands fa-react"></i><h3>React.js</h3></div>
-            <div class="skill-card reveal"><i class="fa-solid fa-code"></i><h3>React Hooks</h3></div>
-            <div class="skill-card reveal"><i class="fa-brands fa-git-alt"></i><h3>Git &amp; GitHub</h3></div>
-            <div class="skill-card reveal"><i class="fa-solid fa-cloud"></i><h3>Fetch / REST API</h3></div>
-            <div class="skill-card reveal"><i class="fa-solid fa-laptop-code"></i><h3>Vite / npm</h3></div>
+            <div class="skill-card reveal">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML5</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS3</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-brands fa-js"></i>
+              <h3>JavaScript (ES6+)</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-brands fa-react"></i>
+              <h3>React.js</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-solid fa-code"></i>
+              <h3>React Hooks</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-brands fa-git-alt"></i>
+              <h3>Git &amp; GitHub</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Fetch / REST API</h3>
+            </div>
+            <div class="skill-card reveal">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Vite / npm</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -197,107 +256,217 @@
 
           <div class="projects-grid" id="projects-grid">
             <article class="project-card" data-category="react django">
-              <div class="project-top"><i class="fa-solid fa-route"></i><span class="badge">Full Stack</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-route"></i
+                ><span class="badge">Full Stack</span>
+              </div>
               <h3>DevPath Website</h3>
               <p>
                 Responsive web application using React.js for the frontend and
                 Django for the backend. Frontend deployed on Vercel and backend
                 on Render. Fully responsive across all devices.
               </p>
-              <div class="project-tags"><span>React.js</span><span>Django</span><span>Fetch API</span><span>React Hooks</span></div>
+              <div class="project-tags">
+                <span>React.js</span><span>Django</span><span>Fetch API</span
+                ><span>React Hooks</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/DevPath/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://dev-path-seven-zeta.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/DevPath/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://dev-path-seven-zeta.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="react javascript">
-              <div class="project-top"><i class="fa-solid fa-cloud-sun"></i><span class="badge">React</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-cloud-sun"></i
+                ><span class="badge">React</span>
+              </div>
               <h3>Weather App</h3>
               <p>
                 Responsive weather application using React.js and the
                 OpenWeather API, providing real-time weather updates with
                 city-based search.
               </p>
-              <div class="project-tags"><span>React.js</span><span>OpenWeather API</span><span>Fetch API</span><span>React Hooks</span></div>
+              <div class="project-tags">
+                <span>React.js</span><span>OpenWeather API</span
+                ><span>Fetch API</span><span>React Hooks</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Weather-App" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://weather-app-zeta-nine-79.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Weather-App"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://weather-app-zeta-nine-79.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="javascript">
-              <div class="project-top"><i class="fa-solid fa-coins"></i><span class="badge">JavaScript</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-coins"></i
+                ><span class="badge">JavaScript</span>
+              </div>
               <h3>Currency Converter App</h3>
               <p>
                 Real-time currency converter using DOM manipulation and the
                 Fetch API to pull live exchange rates across international
                 currencies.
               </p>
-              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Fetch API</span></div>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                ><span>Fetch API</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Currency-Convertor" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://manikrishnahero.github.io/Currency-Convertor/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Currency-Convertor"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://manikrishnahero.github.io/Currency-Convertor/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="css">
-              <div class="project-top"><i class="fa-solid fa-mug-hot"></i><span class="badge">UI / UX</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-mug-hot"></i
+                ><span class="badge">UI / UX</span>
+              </div>
               <h3>Coffee Website</h3>
               <p>
                 Modern, visually appealing responsive coffee website with
                 seamless multi-device support, CSS animations and smooth
                 layouts.
               </p>
-              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>UI/UX</span><span>Animations</span></div>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>UI/UX</span
+                ><span>Animations</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Coffee-Website" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://manikrishnahero.github.io/Coffee-Website/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Coffee-Website"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://manikrishnahero.github.io/Coffee-Website/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="javascript">
-              <div class="project-top"><i class="fa-solid fa-volume-high"></i><span class="badge">Web API</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-volume-high"></i
+                ><span class="badge">Web API</span>
+              </div>
               <h3>Text to Speech</h3>
               <p>
                 Responsive Text-to-Speech app built with HTML5, CSS3 and
                 JavaScript, using the Web Speech API with intuitive Speak/Stop
                 controls and a modern neumorphic interface.
               </p>
-              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Speech API</span></div>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                ><span>Web Speech API</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Text-to-Speech" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://manikrishnahero.github.io/Text-to-Speech/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Text-to-Speech"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://manikrishnahero.github.io/Text-to-Speech/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="javascript">
-              <div class="project-top"><i class="fa-regular fa-clock"></i><span class="badge">JavaScript</span></div>
+              <div class="project-top">
+                <i class="fa-regular fa-clock"></i
+                ><span class="badge">JavaScript</span>
+              </div>
               <h3>Digital Clock</h3>
               <p>
-                Responsive digital clock showing real-time date and 12-hour
-                time with automatic updates, using the Date API and DOM
-                manipulation.
+                Responsive digital clock showing real-time date and 12-hour time
+                with automatic updates, using the Date API and DOM manipulation.
               </p>
-              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Digital-Clock" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://manikrishnahero.github.io/Digital-Clock/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Digital-Clock"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://manikrishnahero.github.io/Digital-Clock/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
 
             <article class="project-card" data-category="css">
-              <div class="project-top"><i class="fa-solid fa-plane-departure"></i><span class="badge">UI / UX</span></div>
+              <div class="project-top">
+                <i class="fa-solid fa-plane-departure"></i
+                ><span class="badge">UI / UX</span>
+              </div>
               <h3>Travelers Site</h3>
               <p>
                 Responsive Travel &amp; Tourism website with interactive
-                navigation, destination showcases, modern UI, reusable
-                sections and cross-browser compatibility.
+                navigation, destination showcases, modern UI, reusable sections
+                and cross-browser compatibility.
               </p>
-              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>UI/UX</span><span>Animations</span></div>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>UI/UX</span
+                ><span>Animations</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/manikrishnahero/Travelers-Site" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://manikrishnahero.github.io/Travelers-Site/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                <a
+                  href="https://github.com/manikrishnahero/Travelers-Site"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://manikrishnahero.github.io/Travelers-Site/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
+                >
               </div>
             </article>
           </div>
@@ -310,7 +479,9 @@
           <h2 class="heading reveal">My <span>Education</span></h2>
           <ol class="timeline">
             <li class="timeline-item reveal">
-              <span class="timeline-dot"><i class="fa-solid fa-award"></i></span>
+              <span class="timeline-dot"
+                ><i class="fa-solid fa-award"></i
+              ></span>
               <div class="edu-card">
                 <span class="year">2026</span>
                 <h3>Python FullStack Development Certification</h3>
@@ -318,7 +489,9 @@
               </div>
             </li>
             <li class="timeline-item reveal">
-              <span class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></span>
+              <span class="timeline-dot"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></span>
               <div class="edu-card">
                 <span class="year">2021 – 2023</span>
                 <h3>B.Sc Zoology</h3>
@@ -337,40 +510,101 @@
             <div class="contact-info">
               <div class="info-item reveal">
                 <i class="fa-solid fa-envelope"></i>
-                <div><h4>Email</h4><p><a href="mailto:manikrishna9345@gmail.com">manikrishna9345@gmail.com</a></p></div>
+                <div>
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:manikrishna9345@gmail.com"
+                      >manikrishna9345@gmail.com</a
+                    >
+                  </p>
+                </div>
               </div>
               <div class="info-item reveal">
                 <i class="fa-solid fa-phone"></i>
-                <div><h4>Phone</h4><p><a href="tel:+919345819257">+91 9345819257</a></p></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+919345819257">+91 9345819257</a></p>
+                </div>
               </div>
               <div class="info-item reveal">
                 <i class="fa-solid fa-location-dot"></i>
-                <div><h4>Address</h4><p>NO 37/26, Eswaran Kovil Street, Chennai Trade Centre, Nandampakkam, Chennai-600089</p></div>
+                <div>
+                  <h4>Address</h4>
+                  <p>
+                    NO 37/26, Eswaran Kovil Street, Chennai Trade Centre,
+                    Nandampakkam, Chennai-600089
+                  </p>
+                </div>
               </div>
               <div class="info-item reveal">
                 <i class="fa-solid fa-language"></i>
-                <div><h4>Languages</h4><p>Tamil, English</p></div>
+                <div>
+                  <h4>Languages</h4>
+                  <p>Tamil, English</p>
+                </div>
               </div>
               <div class="info-item reveal">
                 <i class="fa-brands fa-instagram"></i>
-                <div><h4>Instagram</h4><p><a href="https://www.instagram.com/broken_hero_krishna?igsh=ZjcwZGliN3A0aGhr" target="_blank" rel="noopener">broken_hero_krishna</a></p></div>
+                <div>
+                  <h4>Instagram</h4>
+                  <p>
+                    <a
+                      href="https://www.instagram.com/broken_hero_krishna?igsh=ZjcwZGliN3A0aGhr"
+                      target="_blank"
+                      rel="noopener"
+                      >broken_hero_krishna</a
+                    >
+                  </p>
+                </div>
               </div>
               <div class="info-item reveal">
                 <i class="fa-brands fa-whatsapp"></i>
-                <div><h4>WhatsApp</h4><p><a href="https://wa.me/919345819257" target="_blank" rel="noopener">Manikrishna</a></p></div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <p>
+                    <a
+                      href="https://wa.me/919345819257"
+                      target="_blank"
+                      rel="noopener"
+                      >Manikrishna</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
 
             <form class="contact-form reveal" id="contact-form" novalidate>
               <h3>Send a message</h3>
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              />
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              />
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can I help?"
+                required
+              ></textarea>
               <p class="form-status" id="form-status" role="status"></p>
-              <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -379,15 +613,31 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; <span id="year">2026</span> Mani Krishna. All Rights Reserved.</p>
+        <p>
+          &copy; <span id="year">2026</span> Mani Krishna. All Rights Reserved.
+        </p>
         <div class="social-links small">
-          <a href="https://github.com/manikrishnahero" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mani-a-6134b5296" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a
+            href="https://github.com/manikrishnahero"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mani-a-6134b5296"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
     </footer>
 
-    <button class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="to-top" id="to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
