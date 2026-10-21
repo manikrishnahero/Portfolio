@@ -504,6 +504,21 @@ button {
   right: 10%;
   animation-delay: -3s;
 }
+.chip-4 {
+  top: 50%;
+  right: -5%;
+  animation-delay: -3s;
+}
+.chip-5 {
+  top: -5%;
+  left: 25%;
+  animation-delay: -3s;
+}
+.chip-6 {
+  top: 40%;
+  left: -10%;
+  animation-delay: -3s;
+}
 @keyframes float {
   50% {
     transform: translateY(-12px);
