@@ -1,454 +1,393 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mani Krishna | Portfolio</title>
-    <!-- FontAwesome Icons -->
+    <meta
+      name="description"
+      content="Mani Krishna – Frontend Developer building responsive, interactive web apps with HTML5, CSS3, JavaScript and React.js."
+    />
+    <meta name="theme-color" content="#14121d" />
+    <title>Mani Krishna | Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      // Apply saved theme before paint to avoid a flash
+      try {
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <!-- Header / Navbar -->
-    <header>
-      <nav>
-        <div class="logo">
-          <h1>
-            <span class="first-tag"><</span>Mani<span>.Dev</span
-            ><span class="second-tag">/></span>
-          </h1>
-        </div>
-        <div class="menu-btn" id="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header" id="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Mani Krishna – home">
+          <span class="tag">&lt;</span>Mani<span class="accent">.Dev</span
+          ><span class="tag">/&gt;</span>
+        </a>
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            aria-label="Toggle light / dark theme"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button
+            class="icon-btn menu-btn"
+            id="menu-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </nav>
     </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, I'm</h3>
-        <h1>Mani. A</h1>
-        <div class="animated-heading-container">
-          <h2 class="typing-effect"><span>Frontend</span> Developer</h2>
-        </div>
-        <p>
-          Passionate about building responsive, interactive, and
-          high-performance web applications using HTML5, CSS3, JavaScript, and
-          React.js.
-        </p>
+    <main id="main">
+      <!-- Home -->
+      <section class="hero" id="home">
+        <div class="blob blob-1" aria-hidden="true"></div>
+        <div class="blob blob-2" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <span class="eyebrow"><i class="fa-solid fa-circle"></i> Open to opportunities</span>
+            <h3>Hello, I'm</h3>
+            <h1>Mani Krishna</h1>
+            <h2 class="role">
+              <span class="static">A </span
+              ><span class="typed" id="typed" aria-live="polite">Frontend Developer</span
+              ><span class="cursor" aria-hidden="true"></span>
+            </h2>
+            <p class="lead">
+              Passionate about building responsive, interactive and
+              high-performance web applications using HTML5, CSS3, JavaScript
+              and React.js.
+            </p>
 
-        <div class="social-links">
-          <a href="https://github.com/manikrishnahero" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/mani-a-6134b5296" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="mailto:manikrishna9345@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </div>
+            <div class="btn-group">
+              <a href="./Assests/MANI_A_Resume.pdf" class="btn btn-primary" download>
+                <i class="fa-solid fa-download"></i> Get Resume
+              </a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
 
-        <div class="btn-group">
-          <a href="./Assests/MANI_A_Resume.pdf" class="btn" download
-            >Get Resume</a
-          >
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
-      </div>
-      <div class="Profile-Picture">
-        <div class="long">
-          <div class="long1"></div>
-          <div class="long2"></div>
-        </div>
-        <div class="photo">
-          <img src="./Assests/Mani Krishna Transparent.png" alt="" />
-        </div>
-      </div>
-    </section>
+            <div class="social-links">
+              <a href="https://github.com/manikrishnahero" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/mani-a-6134b5296" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:manikrishna9345@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <h2 class="heading">Professional <span>Summary</span></h2>
-      <div class="about-container">
-        <div class="about-text">
-          <p>
-            Frontend Developer with hands-on experience in building responsive
-            and interactive web applications using HTML5, CSS3, JavaScript
-            (ES6+), and React.js.
-          </p>
-          <p>
-            Passionate about creating user-friendly interfaces and delivering
-            high-quality web experiences. Demonstrates strong problem-solving
-            abilities, adaptability, and a commitment to continuous learning.
-          </p>
+          <div class="hero-visual reveal">
+            <div class="avatar-ring">
+              <div class="avatar">
+                <img
+                  src="./Assests/Mani Krishna Transparent.png"
+                  alt="Portrait of Mani Krishna"
+                  width="400"
+                  height="400"
+                  onerror="this.remove()"
+                />
+                <span class="avatar-fallback" aria-hidden="true">MK</span>
+              </div>
+            </div>
+            <div class="float-chip chip-1"><i class="fa-brands fa-react"></i> React</div>
+            <div class="float-chip chip-2"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="float-chip chip-3"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About"><i class="fa-solid fa-chevron-down"></i></a>
+      </section>
 
-          <div class="soft-skills">
+      <!-- About -->
+      <section class="section alt" id="about">
+        <div class="container">
+          <h2 class="heading reveal">Professional <span>Summary</span></h2>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                Frontend Developer with hands-on experience building responsive
+                and interactive web applications using HTML5, CSS3, JavaScript
+                (ES6+) and React.js.
+              </p>
+              <p>
+                Passionate about creating user-friendly interfaces and
+                delivering high-quality web experiences. Demonstrates strong
+                problem-solving abilities, adaptability, and a commitment to
+                continuous learning.
+              </p>
+            </div>
+            <div class="stats reveal">
+              <div class="stat"><strong data-count="7">0</strong><span>Projects built</span></div>
+              <div class="stat"><strong data-count="4">0</strong><span>Live on Vercel / Pages</span></div>
+              <div class="stat"><strong data-count="2">0</strong><span>Languages spoken</span></div>
+            </div>
+          </div>
+
+          <div class="soft-skills reveal">
             <h3>Soft Skills</h3>
             <div class="tags">
               <span>Communication</span>
               <span>Problem Solving</span>
               <span>Teamwork</span>
               <span>Time Management</span>
-              <span>Quick & Smart Learner</span>
+              <span>Quick &amp; Smart Learner</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <h2 class="heading">Technical <span>Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-card card">
-          <i class="fa-brands fa-html5"></i>
-          <h3>HTML5</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-brands fa-css3-alt"></i>
-          <h3>CSS3</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-brands fa-js"></i>
-          <h3>JavaScript (ES6+)</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-brands fa-react"></i>
-          <h3>React.js</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-solid fa-code"></i>
-          <h3>React Hooks</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-brands fa-git-alt"></i>
-          <h3>Git & GitHub</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-solid fa-cloud"></i>
-          <h3>Fetch / REST API</h3>
-        </div>
-        <div class="skill-card card">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Vite / npm</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <h2 class="heading">Featured <span>Projects</span></h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <div class="project-info">
-            <h3>DevPath Website</h3>
-            <p>
-              Responsive web application using React.js framework for the
-              frontend and Django framework for the backend. Deployed the
-              frontend on Vercel and the backend on Render. Fully responsive
-              across all devices.
-            </p>
-            <div class="project-tags">
-              <span>React.js</span>
-              <span>Django</span>
-              <span>Fetch API</span>
-              <span>React Hooks</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/DevPath/"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a href="https://dev-path-seven-zeta.vercel.app/" target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="heading reveal">Technical <span>Skills</span></h2>
+          <div class="skills-grid">
+            <div class="skill-card reveal"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
+            <div class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
+            <div class="skill-card reveal"><i class="fa-brands fa-js"></i><h3>JavaScript (ES6+)</h3></div>
+            <div class="skill-card reveal"><i class="fa-brands fa-react"></i><h3>React.js</h3></div>
+            <div class="skill-card reveal"><i class="fa-solid fa-code"></i><h3>React Hooks</h3></div>
+            <div class="skill-card reveal"><i class="fa-brands fa-git-alt"></i><h3>Git &amp; GitHub</h3></div>
+            <div class="skill-card reveal"><i class="fa-solid fa-cloud"></i><h3>Fetch / REST API</h3></div>
+            <div class="skill-card reveal"><i class="fa-solid fa-laptop-code"></i><h3>Vite / npm</h3></div>
           </div>
         </div>
+      </section>
 
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Weather App</h3>
-            <p>
-              Responsive weather application using React.js and OpenWeather API
-              to provide real-time weather updates with city-based search
-              functionality.
-            </p>
-            <div class="project-tags">
-              <span>React.js</span>
-              <span>OpenWeather API</span>
-              <span>Fetch API</span>
-              <span>React Hooks</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Weather-App"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://weather-app-zeta-nine-79.vercel.app/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
+      <!-- Projects -->
+      <section class="section alt" id="projects">
+        <div class="container">
+          <h2 class="heading reveal">Featured <span>Projects</span></h2>
+
+          <div class="filters reveal" role="group" aria-label="Filter projects">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="react">React</button>
+            <button class="chip" data-filter="django">Django</button>
+            <button class="chip" data-filter="javascript">JavaScript</button>
+            <button class="chip" data-filter="css">HTML / CSS</button>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Currency Converter App</h3>
-            <p>
-              Real-time currency converter utilizing DOM manipulation and Fetch
-              API to fetch live exchange rates across international currencies.
-            </p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>Fetch API</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Currency-Convertor"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://manikrishnahero.github.io/Currency-Convertor/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Coffee Website</h3>
-            <p>
-              Modern and visually appealing responsive coffee website with
-              seamless multi-device support, CSS animations, and smooth layouts.
-            </p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>UI/UX</span>
-              <span>Animations</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Coffee-Website"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://manikrishnahero.github.io/Coffee-Website/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Text to Speech</h3>
-            <p>
-              Developed a responsive Text-to-Speech web application using HTML5,
-              CSS3, and JavaScript, leveraging the Web Speech API for speech
-              synthesis with intuitive Speak/Stop controls and a modern
-              neumorphic interface.
-            </p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>WebSpeechAPI</span>
-              <span>Fetch API</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Text-to-Speech"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://manikrishnahero.github.io/Text-to-Speech/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Digital Clock</h3>
-            <p>
-              Developed a responsive Digital Clock using HTML5, CSS3, and
-              JavaScript, displaying real-time date and 12-hour time with
-              automatic updates, Date API, and DOM manipulation.
-            </p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Digital-Clock"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://manikrishnahero.github.io/Digital-Clock/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-info">
-            <h3>Travelers Site</h3>
-            <p>
-              Developed a responsive Travel & Tourism website using HTML5 and
-              CSS3, featuring interactive navigation, destination showcases,
-              modern UI, reusable sections, and cross-browser compatibility.
-            </p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>UI/UX</span>
-              <span>Animations</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/manikrishnahero/Travelers-Site"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://manikrishnahero.github.io/Travelers-Site/"
-                target="_blank"
-                ><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="heading">My <span>Education</span></h2>
-      <div class="education-box showapper">
-        <div class="edu-card">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span class="year">2021 - 2023</span>
-          <h3>B.Sc Zoology</h3>
-          <p>Sethupathy Government Arts College, Ramanathapuram</p>
-        </div>
-      </div>
-
-      <div class="education-box showapper">
-        <div class="edu-card">
-          <i class="fa-solid fa-award"></i>
-          <span class="year">2026</span>
-          <h3>Python FullStack Development Certification</h3>
-          <p>Code99 IT Academy, Velachery, Chennai</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Get In <span>Touch</span></h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
+          <div class="projects-grid" id="projects-grid">
+            <article class="project-card" data-category="react django">
+              <div class="project-top"><i class="fa-solid fa-route"></i><span class="badge">Full Stack</span></div>
+              <h3>DevPath Website</h3>
               <p>
-                <a href="mailto:manikrishna9345@gmail.com" target="_blank"
-                  >manikrishna9345@gmail.com</a
-                >
+                Responsive web application using React.js for the frontend and
+                Django for the backend. Frontend deployed on Vercel and backend
+                on Render. Fully responsive across all devices.
               </p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p><a href="tel:+919345819257">+91 9345819257</a></p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <h4>Address</h4>
+              <div class="project-tags"><span>React.js</span><span>Django</span><span>Fetch API</span><span>React Hooks</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/DevPath/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://dev-path-seven-zeta.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="react javascript">
+              <div class="project-top"><i class="fa-solid fa-cloud-sun"></i><span class="badge">React</span></div>
+              <h3>Weather App</h3>
               <p>
-                NO 37/26, Eswaran Kovil Street, Chennai Trade Centre,
-                Nandampakkam, Chennai-600089
+                Responsive weather application using React.js and the
+                OpenWeather API, providing real-time weather updates with
+                city-based search.
               </p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-language"></i>
-            <div>
-              <h4>Languages</h4>
-              <p>Tamil, English</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-brands fa-instagram"></i>
-            <div>
-              <h4>Instagram</h4>
+              <div class="project-tags"><span>React.js</span><span>OpenWeather API</span><span>Fetch API</span><span>React Hooks</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Weather-App" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://weather-app-zeta-nine-79.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-top"><i class="fa-solid fa-coins"></i><span class="badge">JavaScript</span></div>
+              <h3>Currency Converter App</h3>
               <p>
-                <a
-                  href="https://www.instagram.com/broken_hero_krishna?igsh=ZjcwZGliN3A0aGhr"
-                  target="_blank"
-                  >broken_hero_krishna</a
-                >
+                Real-time currency converter using DOM manipulation and the
+                Fetch API to pull live exchange rates across international
+                currencies.
               </p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <div>
-              <h4>Whatsup</h4>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Fetch API</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Currency-Convertor" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://manikrishnahero.github.io/Currency-Convertor/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="css">
+              <div class="project-top"><i class="fa-solid fa-mug-hot"></i><span class="badge">UI / UX</span></div>
+              <h3>Coffee Website</h3>
               <p>
-                <a href="https://wa.me/919345819257" target="_blank"
-                  >Manikrishna</a
-                >
+                Modern, visually appealing responsive coffee website with
+                seamless multi-device support, CSS animations and smooth
+                layouts.
               </p>
-            </div>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>UI/UX</span><span>Animations</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Coffee-Website" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://manikrishnahero.github.io/Coffee-Website/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-top"><i class="fa-solid fa-volume-high"></i><span class="badge">Web API</span></div>
+              <h3>Text to Speech</h3>
+              <p>
+                Responsive Text-to-Speech app built with HTML5, CSS3 and
+                JavaScript, using the Web Speech API with intuitive Speak/Stop
+                controls and a modern neumorphic interface.
+              </p>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Speech API</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Text-to-Speech" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://manikrishnahero.github.io/Text-to-Speech/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-top"><i class="fa-regular fa-clock"></i><span class="badge">JavaScript</span></div>
+              <h3>Digital Clock</h3>
+              <p>
+                Responsive digital clock showing real-time date and 12-hour
+                time with automatic updates, using the Date API and DOM
+                manipulation.
+              </p>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Digital-Clock" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://manikrishnahero.github.io/Digital-Clock/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="css">
+              <div class="project-top"><i class="fa-solid fa-plane-departure"></i><span class="badge">UI / UX</span></div>
+              <h3>Travelers Site</h3>
+              <p>
+                Responsive Travel &amp; Tourism website with interactive
+                navigation, destination showcases, modern UI, reusable
+                sections and cross-browser compatibility.
+              </p>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>UI/UX</span><span>Animations</span></div>
+              <div class="project-links">
+                <a href="https://github.com/manikrishnahero/Travelers-Site" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://manikrishnahero.github.io/Travelers-Site/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Mani Krishna. All Rights Reserved.</p>
+      <!-- Education -->
+      <section class="section" id="education">
+        <div class="container">
+          <h2 class="heading reveal">My <span>Education</span></h2>
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <span class="timeline-dot"><i class="fa-solid fa-award"></i></span>
+              <div class="edu-card">
+                <span class="year">2026</span>
+                <h3>Python FullStack Development Certification</h3>
+                <p>Code99 IT Academy, Velachery, Chennai</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div class="edu-card">
+                <span class="year">2021 – 2023</span>
+                <h3>B.Sc Zoology</h3>
+                <p>Sethupathy Government Arts College, Ramanathapuram</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section alt" id="contact">
+        <div class="container">
+          <h2 class="heading reveal">Get In <span>Touch</span></h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="info-item reveal">
+                <i class="fa-solid fa-envelope"></i>
+                <div><h4>Email</h4><p><a href="mailto:manikrishna9345@gmail.com">manikrishna9345@gmail.com</a></p></div>
+              </div>
+              <div class="info-item reveal">
+                <i class="fa-solid fa-phone"></i>
+                <div><h4>Phone</h4><p><a href="tel:+919345819257">+91 9345819257</a></p></div>
+              </div>
+              <div class="info-item reveal">
+                <i class="fa-solid fa-location-dot"></i>
+                <div><h4>Address</h4><p>NO 37/26, Eswaran Kovil Street, Chennai Trade Centre, Nandampakkam, Chennai-600089</p></div>
+              </div>
+              <div class="info-item reveal">
+                <i class="fa-solid fa-language"></i>
+                <div><h4>Languages</h4><p>Tamil, English</p></div>
+              </div>
+              <div class="info-item reveal">
+                <i class="fa-brands fa-instagram"></i>
+                <div><h4>Instagram</h4><p><a href="https://www.instagram.com/broken_hero_krishna?igsh=ZjcwZGliN3A0aGhr" target="_blank" rel="noopener">broken_hero_krishna</a></p></div>
+              </div>
+              <div class="info-item reveal">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div><h4>WhatsApp</h4><p><a href="https://wa.me/919345819257" target="_blank" rel="noopener">Manikrishna</a></p></div>
+              </div>
+            </div>
+
+            <form class="contact-form reveal" id="contact-form" novalidate>
+              <h3>Send a message</h3>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+              <p class="form-status" id="form-status" role="status"></p>
+              <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year">2026</span> Mani Krishna. All Rights Reserved.</p>
+        <div class="social-links small">
+          <a href="https://github.com/manikrishnahero" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mani-a-6134b5296" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
     </footer>
+
+    <button class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
   </body>
